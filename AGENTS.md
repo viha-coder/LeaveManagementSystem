@@ -2,7 +2,7 @@
 
 ## Purpose
 
-This repository is an ASP.NET Core MVC Leave Management System using EF Core, SQL Server
+This repository is an ASP.NET Core MVC Leave Management System using EF Core, SQL Server, C#, ASP.NET Core fundamentals, and layered architecture. It is designed for learning and demonstration purposes.
 
 Agents must preserve the layered architecture and modernize toward .NET 10.
 

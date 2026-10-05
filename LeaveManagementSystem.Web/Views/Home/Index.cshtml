@@ -1,5 +1,5 @@
 ﻿@{
-    ViewData["Title"] = "Início";
+    ViewData["Title"] = "Home";
 }
 
 <style>
@@ -20,12 +20,12 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-md-7">
-                <h1 class="display-5 fw-bold">Sistema de Gestão de Férias</h1>
-                <p class="lead mb-4">Solicite ausências, acompanhe aprovações e gerencie seu saldo de férias de forma simples e segura.</p>
+                <h1 class="display-5 fw-bold">Leave Management System</h1>
+                <p class="lead mb-4">Request time off, track approvals and manage your leave balance easily and securely.</p>
                 <div class="d-flex gap-2 quick-actions">
-                    <a asp-controller="LeaveRequests" asp-action="Create" class="btn btn-light btn-lg">Solicitar Folga</a>
-                    <a asp-controller="LeaveRequests" asp-action="Index" class="btn btn-outline-light btn-lg">Meus Pedidos</a>
-                    <a asp-controller="Admin" asp-action="Index" class="btn btn-outline-light btn-lg d-none d-md-inline">Painel Admin</a>
+                    <a asp-controller="LeaveRequests" asp-action="Create" class="btn btn-light btn-lg">Request Leave</a>
+                    <a asp-controller="LeaveRequests" asp-action="Index" class="btn btn-outline-light btn-lg">My Requests</a>
+                    <a asp-controller="Admin" asp-action="Index" class="btn btn-outline-light btn-lg d-none d-md-inline">Admin Panel</a>
                 </div>
             </div>
             <div class="col-md-5 text-center mt-4 mt-md-0">
@@ -33,15 +33,15 @@
                     <div class="row">
                         <div class="col-4">
                             <h3 class="mb-0" data-count="12">0</h3>
-                            <small class="text-muted">Dias Restantes</small>
+                            <small class="text-muted">Days Remaining</small>
                         </div>
                         <div class="col-4">
                             <h3 class="mb-0" data-count="3">0</h3>
-                            <small class="text-muted">Pendentes</small>
+                            <small class="text-muted">Pending</small>
                         </div>
                         <div class="col-4">
                             <h3 class="mb-0" data-count="24">0</h3>
-                            <small class="text-muted">Aprovadas</small>
+                            <small class="text-muted">Approved</small>
                         </div>
                     </div>
                 </div>
@@ -55,27 +55,27 @@
         <div class="col-md-4">
             <div class="card h-100 shadow-sm">
                 <div class="card-body">
-                    <h5 class="card-title">Solicitar Nova Folga</h5>
-                    <p class="card-text">Abra uma nova solicitação de férias ou ausência rápida.</p>
-                    <a asp-controller="LeaveRequests" asp-action="Create" class="btn btn-primary">Solicitar agora</a>
+                    <h5 class="card-title">Request New Leave</h5>
+                    <p class="card-text">Open a new leave or quick absence request.</p>
+                    <a asp-controller="LeaveRequests" asp-action="Create" class="btn btn-primary">Request now</a>
                 </div>
             </div>
         </div>
         <div class="col-md-4">
             <div class="card h-100 shadow-sm">
                 <div class="card-body">
-                    <h5 class="card-title">Aprovações</h5>
-                    <p class="card-text">Acompanhe pedidos que exigem sua atenção como aprovador.</p>
-                    <a asp-controller="Approvals" asp-action="Index" class="btn btn-outline-primary">Ver Pendentes</a>
+                    <h5 class="card-title">Approvals</h5>
+                    <p class="card-text">Track requests that require your attention as an approver.</p>
+                    <a asp-controller="Approvals" asp-action="Index" class="btn btn-outline-primary">View Pending</a>
                 </div>
             </div>
         </div>
         <div class="col-md-4">
             <div class="card h-100 shadow-sm">
                 <div class="card-body">
-                    <h5 class="card-title">Relatórios</h5>
-                    <p class="card-text">Gere relatórios de uso de férias e histórico por colaborador.</p>
-                    <a asp-controller="Reports" asp-action="Index" class="btn btn-outline-primary">Abrir Relatórios</a>
+                    <h5 class="card-title">Reports</h5>
+                    <p class="card-text">Generate leave usage reports and employee history.</p>
+                    <a asp-controller="Reports" asp-action="Index" class="btn btn-outline-primary">Open Reports</a>
                 </div>
             </div>
         </div>
@@ -84,15 +84,15 @@
     <div class="row">
         <div class="col-lg-8">
             <div class="card shadow-sm">
-                <div class="card-header">Atividades Recentes</div>
+                <div class="card-header">Recent Activity</div>
                 <div class="card-body p-0">
                     <div class="table-responsive">
                         <table class="table table-striped mb-0 table-small">
                             <thead class="table-light">
                                 <tr>
-                                    <th>Data</th>
-                                    <th>Usuário</th>
-                                    <th>Tipo</th>
+                                    <th>Date</th>
+                                    <th>User</th>
+                                    <th>Type</th>
                                     <th>Status</th>
                                 </tr>
                             </thead>
@@ -100,20 +100,20 @@
                                 <tr>
                                     <td>2026-09-20</td>
                                     <td>Mariana S.</td>
-                                    <td>Férias</td>
-                                    <td><span class="badge bg-warning text-dark">Pendente</span></td>
+                                    <td>Vacation</td>
+                                    <td><span class="badge bg-warning text-dark">Pending</span></td>
                                 </tr>
                                 <tr>
                                     <td>2026-09-18</td>
                                     <td>Rafael P.</td>
                                     <td>Home Office</td>
-                                    <td><span class="badge bg-success">Aprovado</span></td>
+                                    <td><span class="badge bg-success">Approved</span></td>
                                 </tr>
                                 <tr>
                                     <td>2026-09-15</td>
                                     <td>Ana L.</td>
-                                    <td>Licença Médica</td>
-                                    <td><span class="badge bg-danger">Rejeitado</span></td>
+                                    <td>Medical Leave</td>
+                                    <td><span class="badge bg-danger">Rejected</span></td>
                                 </tr>
                             </tbody>
                         </table>
@@ -123,14 +123,14 @@
         </div>
         <div class="col-lg-4">
             <div class="card shadow-sm">
-                <div class="card-header">Resumo</div>
+                <div class="card-header">Summary</div>
                 <div class="card-body">
                     <ul class="list-unstyled mb-0">
-                        <li class="mb-2">Saldo anual: <strong>20 dias</strong></li>
-                        <li class="mb-2">Solicitações este ano: <strong>6</strong></li>
-                        <li class="mb-2">Aguardando aprovação: <strong>2</strong></li>
+                        <li class="mb-2">Annual balance: <strong>20 days</strong></li>
+                        <li class="mb-2">Requests this year: <strong>6</strong></li>
+                        <li class="mb-2">Awaiting approval: <strong>2</strong></li>
                     </ul>
-                    <a asp-controller="Profile" asp-action="Index" class="btn btn-sm btn-outline-secondary mt-3">Meu Perfil</a>
+                    <a asp-controller="Profile" asp-action="Index" class="btn btn-sm btn-outline-secondary mt-3">My Profile</a>
                 </div>
             </div>
         </div>
