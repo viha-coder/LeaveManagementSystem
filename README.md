@@ -47,12 +47,18 @@ An enterprise web application built with **ASP.NET Core MVC** designed to stream
 ### Project Structure Highlights
 
 LeaveManagementSystem/
+
 ├── Controllers/         # Handles HTTP requests and business flow
+
 ├── Data/                # DbContext, Migrations, and Database Entities
+
 ├── Mapping/             # AutoMapper profiles (MappingProfile.cs)
+
 ├── Models/
 │   └── LeaveTypes/      # Form ViewModels & ReadOnly ViewModels
+
 └── Views/
+
 └── LeaveTypes/      # Razor Views bound to ViewModels
 
 ### Getting Started
