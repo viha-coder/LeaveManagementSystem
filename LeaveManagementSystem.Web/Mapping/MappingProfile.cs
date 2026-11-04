@@ -10,7 +10,9 @@ namespace LeaveManagementSystem.Web.Mapping
     {
         public MappingProfile()
         {
-            CreateMap<LeaveType, IndexVM>().ForMember(dest => dest.Days, opt => opt.MapFrom(src => src.NumberOfDays));
+            CreateMap<LeaveType, LeaveTypeReadOnlyVM>();
+            CreateMap<LeaveTypeCreateVM, LeaveType>();
+            CreateMap<LeaveTypeEditVM, LeaveType>().ReverseMap();
         }
     }
 }
