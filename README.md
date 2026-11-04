@@ -48,19 +48,19 @@ An enterprise web application built with **ASP.NET Core MVC** designed to stream
 
 LeaveManagementSystem
 
-├── Controllers         # Handles HTTP requests and business flow
+├── Controllers/          `Handles HTTP requests and business flow`
 
-├── Data                # DbContext, Migrations, and Database Entities
+├── Data/                 `DbContext, Migrations, and Database Entities`
 
-├── Mapping             # AutoMapper profiles (MappingProfile.cs)
+├── Mapping/              `AutoMapper profiles (MappingProfile.cs)`
 
-├── Models
+├── Models/
 
-│   └── LeaveTypes      # Form ViewModels & ReadOnly ViewModels
+│   └── LeaveTypes/       `Form ViewModels & ReadOnly ViewModels`
 
 └── Views/
 
-└── LeaveTypes/      # Razor Views bound to ViewModels
+└── LeaveTypes/        `Razor Views bound to ViewModels`
 
 ### Getting Started
 
