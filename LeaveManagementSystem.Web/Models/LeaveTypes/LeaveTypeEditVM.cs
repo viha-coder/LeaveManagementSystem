@@ -10,7 +10,7 @@ namespace LeaveManagementSystem.Web.Models.LeaveTypes
         public string Name { get; set; } = string.Empty;
 
         [Required]
-        [Range(1, 90, ErrorMessage = "Choose an valid number of days between 1 and 90")]
+        [Range(1, 180, ErrorMessage = "Choose an valid number of days between 1 and 180")]
         [Display(Name = "Number Of Days")]
         public int NumberOfDays { get; set; }
     }
